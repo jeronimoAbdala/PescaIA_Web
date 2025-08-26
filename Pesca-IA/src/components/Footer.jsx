@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Fish, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
+import { Fish, Mail, Facebook, MessageCircle } from 'lucide-react'; // solo los que existen en lucide
+import { FaTiktok, FaReddit, FaWhatsapp } from 'react-icons/fa'; // resto de íconos
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: FaWhatsapp, href: 'https://wa.me/543516640106', label: 'Whatsapp' },
+    { icon: FaTiktok, href: 'https://www.tiktok.com/@pesca_ia_app', label: 'TikTok' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61579625351464', label: 'Facebook' },
+    { icon: FaReddit, href: 'https://www.reddit.com/r/Pesca_IA/', label: 'Reddit' },
   ];
 
   return (
@@ -24,7 +26,7 @@ const Footer = () => {
               <div className="p-2 rounded-xl bg-white/10">
                 <Fish className="w-6 h-6 text-cyan-300" />
               </div>
-              <span className="text-xl font-bold text-white">FishingAI</span>
+              <span className="text-lg sm:text-xl font-bold text-white">Pesca IA</span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               La aplicación de pesca más avanzada que utiliza inteligencia artificial 
@@ -39,7 +41,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="space-y-4"
           >
-            <span className="text-lg font-semibold text-white">Enlaces Rápidos</span>
+            <span className="text-base sm:text-lg font-semibold text-white">Enlaces Rápidos</span>
             <div className="flex flex-col space-y-2">
               <a href="/" className="text-gray-300 hover:text-cyan-300 transition-colors text-sm">
                 Inicio
@@ -63,7 +65,7 @@ const Footer = () => {
             <span className="text-lg font-semibold text-white">Contacto</span>
             <div className="flex items-center space-x-2 text-gray-300">
               <Mail className="w-4 h-4" />
-              <span className="text-sm">contacto@fishingai.com</span>
+              <span className="text-sm">contacto@PescaIA.com</span>
             </div>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -71,7 +73,9 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 hover-scale"
+                  className="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <social.icon className="w-5 h-5 text-cyan-300" />
                 </a>
@@ -88,7 +92,7 @@ const Footer = () => {
           className="mt-8 pt-8 border-t border-white/20 text-center"
         >
           <p className="text-gray-400 text-sm">
-            © 2024 FishingAI. Todos los derechos reservados.
+            © 2024 PescaIA. Todos los derechos reservados.
           </p>
         </motion.div>
       </div>

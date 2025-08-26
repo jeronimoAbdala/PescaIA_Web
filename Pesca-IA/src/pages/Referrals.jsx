@@ -17,7 +17,7 @@ const Referrals = () => {
 
   useEffect(() => {
     // Load referral stats from localStorage
-    const savedStats = localStorage.getItem('fishingai_referral_stats');
+    const savedStats = localStorage.getItem('PescaIA_referral_stats');
     if (savedStats) {
       setReferralStats(JSON.parse(savedStats));
     }
@@ -44,7 +44,7 @@ const Referrals = () => {
 
     // Generate unique referral code based on email
     const referralCode = btoa(email).replace(/[^a-zA-Z0-9]/g, '').substring(0, 8).toUpperCase();
-    const link = `https://fishingai.com/download?ref=${referralCode}`;
+    const link = `https://PescaIA.com/download?ref=${referralCode}`;
     
     setReferralLink(link);
     
@@ -55,7 +55,7 @@ const Referrals = () => {
       link,
       createdAt: new Date().toISOString()
     };
-    localStorage.setItem('fishingai_referral_data', JSON.stringify(referralData));
+    localStorage.setItem('PescaIA_referral_data', JSON.stringify(referralData));
 
     toast({
       title: "¡Link generado exitosamente!",
@@ -125,10 +125,10 @@ const Referrals = () => {
   return (
     <>
       <Helmet>
-        <title>Sistema de Referidos - FishingAI</title>
-        <meta name="description" content="Invita a tus amigos a FishingAI y gana días de suscripción PRO gratis. Sistema de referidos con recompensas exclusivas para pescadores." />
-        <meta property="og:title" content="Sistema de Referidos - FishingAI" />
-        <meta property="og:description" content="Invita a tus amigos a FishingAI y gana días de suscripción PRO gratis. Sistema de referidos con recompensas exclusivas para pescadores." />
+        <title>Sistema de Referidos - PescaIA</title>
+        <meta name="description" content="Invita a tus amigos a PescaIA y gana días de suscripción PRO gratis. Sistema de referidos con recompensas exclusivas para pescadores." />
+        <meta property="og:title" content="Sistema de Referidos - PescaIA" />
+        <meta property="og:description" content="Invita a tus amigos a PescaIA y gana días de suscripción PRO gratis. Sistema de referidos con recompensas exclusivas para pescadores." />
       </Helmet>
 
       <div className="pt-20 min-h-screen">
@@ -146,10 +146,10 @@ const Referrals = () => {
                   <Users className="w-12 h-12 text-white" />
                 </div>
               </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-white text-shadow">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white text-shadow">
                 Sistema de <span className="gradient-text">Referidos</span>
               </h1>
-              <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
                 Invita a tus amigos pescadores y obtén días de suscripción PRO gratis. 
                 ¡Mientras más compartas, más beneficios obtienes!
               </p>
@@ -209,17 +209,17 @@ const Referrals = () => {
             >
               <div className="glass-effect rounded-2xl p-8">
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl font-bold text-white mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                     Genera tu Link de Referido
                   </h2>
-                  <p className="text-gray-300">
+                  <p className="text-gray-300 text-base sm:text-lg">
                     Ingresa tu email para crear tu link único y comenzar a ganar recompensas
                   </p>
                 </div>
 
                 <div className="space-y-6">
                   <div>
-                    <label className="block text-white font-medium mb-2">
+                    <label className="block text-white font-medium mb-2 text-sm sm:text-base">
                       Tu Email
                     </label>
                     <input
@@ -227,7 +227,7 @@ const Referrals = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="tu@email.com"
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
+                      className="w-full px-3 sm:px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
                     />
                   </div>
 
@@ -246,7 +246,7 @@ const Referrals = () => {
                       className="space-y-4"
                     >
                       <div>
-                        <label className="block text-white font-medium mb-2">
+                        <label className="block text-white font-medium mb-2 text-sm sm:text-base">
                           Tu Link de Referido
                         </label>
                         <div className="flex gap-2">
@@ -254,12 +254,12 @@ const Referrals = () => {
                             type="text"
                             value={referralLink}
                             readOnly
-                            className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none"
+                            className="flex-1 px-3 sm:px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none text-sm sm:text-base"
                           />
                           <Button
                             onClick={copyToClipboard}
                             variant="outline"
-                            className="px-4 py-3 border-white/20 text-white hover:bg-white/10"
+                            className="px-3 sm:px-4 py-3 border-white/20 text-white hover:bg-white/10"
                           >
                             {copied ? (
                               <Check className="w-5 h-5" />
@@ -286,10 +286,10 @@ const Referrals = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-shadow">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 text-shadow">
                 Beneficios <span className="gradient-text">Exclusivos</span>
               </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
                 Descubre todas las recompensas que puedes obtener al invitar a tus amigos
               </p>
             </motion.div>
@@ -329,10 +329,10 @@ const Referrals = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-shadow">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 text-shadow">
                 ¿Cómo <span className="gradient-text">Funciona?</span>
               </h2>
-              <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto">
                 Tres simples pasos para comenzar a ganar recompensas
               </p>
             </motion.div>
@@ -372,16 +372,16 @@ const Referrals = () => {
               transition={{ duration: 0.8 }}
               className="text-center space-y-8"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white text-shadow">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-shadow">
                 ¡Comienza a Ganar Hoy!
               </h2>
-              <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
                 No esperes más. Genera tu link de referido y comienza a disfrutar 
-                de los beneficios PRO de FishingAI.
+                de los beneficios PRO de PescaIA.
               </p>
               <Button
                 onClick={() => document.querySelector('input[type="email"]')?.focus()}
-                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-6 text-lg rounded-xl hover-scale pulse-glow"
+                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-xl hover-scale"
               >
                 <Gift className="w-5 h-5 mr-2" />
                 Generar Mi Link Ahora

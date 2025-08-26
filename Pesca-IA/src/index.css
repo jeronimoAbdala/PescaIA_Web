@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'); */
+/* Cargamos la fuente desde index.html para evitar fallos HMR */
 
 * {
   margin: 0;
@@ -85,4 +85,16 @@ body {
   .section-padding {
     padding: 3rem 1rem;
   }
+  /* Tipografías más pequeñas en móvil para mejorar legibilidad */
+  h1 { font-size: 1.875rem; /* text-3xl */ line-height: 2.25rem; }
+  h2 { font-size: 1.5rem; /* text-2xl */ line-height: 2rem; }
+  h3 { font-size: 1.25rem; /* text-xl */ line-height: 1.75rem; }
+  p { font-size: 1rem; /* text-base */ line-height: 1.6; }
+}
+
+/* Tarjeta de marca para el logo */
+.brand-badge {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
 }

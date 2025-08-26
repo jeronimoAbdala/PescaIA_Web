@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X, Fish } from 'lucide-react';
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,8 +10,8 @@ const Header = () => {
 
   const navItems = [
     { name: 'Inicio', path: '/' },
-    { name: 'Privacidad', path: '/privacy' },
-    { name: 'Referidos', path: '/referrals' },
+    // { name: 'Privacidad', path: '/privacy' },
+    // { name: 'Referidos', path: '/referrals' },
   ];
 
   const toggleMenu = () => {
@@ -27,11 +28,11 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 hover-scale">
-            <div className="p-2 rounded-xl tech-gradient pulse-glow">
-              <Fish className="w-8 h-8 text-white" />
-            </div>
-            <span className="text-2xl font-bold gradient-text">FishingAI</span>
+          <Link to="/" className="flex items-center space-x-3 hover-scale">
+              <div className="brand-badge rounded-2xl p-1.5 md:p-2">
+                <img src={logo} alt="Pesca IA" className="w-9 h-9 md:w-10 md:h-10 object-cover rounded-xl" />
+              </div>
+            <span className="text-xl md:text-2xl font-bold gradient-text leading-none">PescaIA</span>
           </Link>
 
           {/* Desktop Navigation */}

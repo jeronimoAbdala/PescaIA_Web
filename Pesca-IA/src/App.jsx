@@ -13,10 +13,10 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col scroll-smooth">
         <Helmet>
-          <title>FishingAI - Analiza y mide tus capturas con inteligencia artificial</title>
-          <meta name="description" content="FishingAI utiliza inteligencia artificial para analizar y medir tus capturas de pesca. Obtén captions automáticos y accede a funciones PRO exclusivas." />
-          <meta property="og:title" content="FishingAI - Analiza y mide tus capturas con inteligencia artificial" />
-          <meta property="og:description" content="FishingAI utiliza inteligencia artificial para analizar y medir tus capturas de pesca. Obtén captions automáticos y accede a funciones PRO exclusivas." />
+          <title>Pesca IA - Analiza y mide tus capturas con inteligencia artificial</title>
+          <meta name="description" content="Pesca IA utiliza inteligencia artificial para analizar y medir tus capturas de pesca. Obtén captions automáticos y accede a funciones PRO exclusivas." />
+          <meta property="og:title" content="Pesca IA - Analiza y mide tus capturas con inteligencia artificial" />
+          <meta property="og:description" content="Pesca IA utiliza inteligencia artificial para analizar y medir tus capturas de pesca. Obtén captions automáticos y accede a funciones PRO exclusivas." />
           <meta property="og:type" content="website" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Helmet>

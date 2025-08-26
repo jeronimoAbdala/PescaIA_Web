@@ -1,13 +1,13 @@
-Política de Privacidad - FishingAI
+Política de Privacidad - PescaIA
 
 Última actualización: Enero 2024
 
-En FishingAI, tu privacidad es nuestra prioridad. Conoce cómo protegemos y manejamos tu información personal de manera transparente y segura.
+En PescaIA, tu privacidad es nuestra prioridad. Conoce cómo protegemos y manejamos tu información personal de manera transparente y segura.
 
 Introducción
 
-Esta Política de Privacidad describe cómo FishingAI ("nosotros", "nuestro" o "la aplicación") recopila, utiliza y protege tu información cuando utilizas nuestra aplicación móvil.
-Al utilizar FishingAI, aceptas las prácticas descritas en esta política.
+Esta Política de Privacidad describe cómo PescaIA ("nosotros", "nuestro" o "la aplicación") recopila, utiliza y protege tu información cuando utilizas nuestra aplicación móvil.
+Al utilizar PescaIA, aceptas las prácticas descritas en esta política.
 
 Información que Recopilamos
 
@@ -79,7 +79,7 @@ Contacto
 
 Si tienes preguntas sobre esta Política de Privacidad o sobre cómo manejamos tu información, no dudes en contactarnos:
 
-Email: privacidad@fishingai.com
+Email: privacidad@PescaIA.com
 
 Dirección: Disponible bajo solicitud
 

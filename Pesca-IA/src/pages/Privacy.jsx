@@ -73,10 +73,10 @@ const Privacy = () => {
   return (
     <>
       <Helmet>
-        <title>Política de Privacidad - FishingAI</title>
-        <meta name="description" content="Conoce cómo FishingAI protege tu privacidad y maneja tus datos personales. Política de privacidad completa y transparente." />
-        <meta property="og:title" content="Política de Privacidad - FishingAI" />
-        <meta property="og:description" content="Conoce cómo FishingAI protege tu privacidad y maneja tus datos personales. Política de privacidad completa y transparente." />
+        <title>Política de Privacidad - Pesca IA</title>
+        <meta name="description" content="Conoce cómo Pesca IA protege tu privacidad y maneja tus datos personales. Política de privacidad completa y transparente." />
+        <meta property="og:title" content="Política de Privacidad - Pesca IA" />
+        <meta property="og:description" content="Conoce cómo Pesca IA protege tu privacidad y maneja tus datos personales. Política de privacidad completa y transparente." />
       </Helmet>
 
       <div className="pt-20 min-h-screen">
@@ -94,11 +94,11 @@ const Privacy = () => {
                   <Shield className="w-12 h-12 text-white" />
                 </div>
               </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-white text-shadow">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white text-shadow">
                 Política de <span className="gradient-text">Privacidad</span>
               </h1>
-              <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-                En FishingAI, tu privacidad es nuestra prioridad. Conoce cómo protegemos 
+              <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+                En Pesca IA, tu privacidad es nuestra prioridad. Conoce cómo protegemos 
                 y manejamos tu información personal de manera transparente y segura.
               </p>
               <div className="text-sm text-gray-300">
@@ -118,11 +118,11 @@ const Privacy = () => {
               transition={{ duration: 0.6 }}
               className="glass-effect rounded-2xl p-8 mb-12"
             >
-              <h2 className="text-2xl font-bold text-white mb-4">Introducción</h2>
-              <p className="text-gray-300 leading-relaxed">
-                Esta Política de Privacidad describe cómo FishingAI ("nosotros", "nuestro" o "la aplicación") 
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">Introducción</h2>
+              <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
+                Esta Política de Privacidad describe cómo Pesca IA ("nosotros", "nuestro" o "la aplicación") 
                 recopila, utiliza y protege tu información cuando utilizas nuestra aplicación móvil. 
-                Al utilizar FishingAI, aceptas las prácticas descritas en esta política.
+                Al utilizar Pesca IA, aceptas las prácticas descritas en esta política.
               </p>
             </motion.div>
 
@@ -140,9 +140,9 @@ const Privacy = () => {
                     <div className="p-3 rounded-xl tech-gradient">
                       <section.icon className="w-6 h-6 text-white" />
                     </div>
-                    <h2 className="text-2xl font-bold text-white">{section.title}</h2>
+                    <h2 className="text-xl sm:text-2xl font-bold text-white">{section.title}</h2>
                   </div>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 text-base sm:text-lg">
                     {section.content.map((item, itemIndex) => (
                       <li key={itemIndex} className="text-gray-300 leading-relaxed flex items-start">
                         <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -167,7 +167,7 @@ const Privacy = () => {
                 no dudes en contactarnos:
               </p>
               <div className="space-y-2 text-gray-300">
-                <p><strong>Email:</strong> privacidad@fishingai.com</p>
+                <p><strong>Email:</strong> privacidad@Pesca IA.com</p>
                 <p><strong>Dirección:</strong> Disponible bajo solicitud</p>
               </div>
             </motion.div>
